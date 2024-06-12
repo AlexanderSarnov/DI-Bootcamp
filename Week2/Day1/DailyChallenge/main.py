@@ -11,7 +11,8 @@ and low and high brackets.
 
 def input_function():
   """
-  This function prompts the user for a string, validates its length to be within set interval,
+  This function prompts the user for a string, validates its length to be within set interval, 
+  builds and prints the string with shuffled characters
   and prints the first and last characters if it's 10 characters long.
   """
   while True:
