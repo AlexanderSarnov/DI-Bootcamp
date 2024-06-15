@@ -23,12 +23,12 @@ def sort_comma_separated_words(words):
     print("Error: Invalid input. Please enter a comma-separated list of words.")
     return ""
 
-  # Check length without specifying limit (user-friendly)
+  # Check length without specifying limit
   if len(user_input) > 1000:
-    print("Error: The input you provided is too long. Please enter a shorter list of words.")
+    print("Error: The input is too long. Please enter a shorter list of words.")
     return ""  # Return empty string for invalid input exceeding limit
 
-  # Slice after length check to limit to 1000 symbols (corrected)
+  # Slice after length check to limit to 1000 symbols
   words = words[:1000]
 
   # Split the comma-separated string into a list of words
