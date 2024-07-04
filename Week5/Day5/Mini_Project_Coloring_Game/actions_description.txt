@@ -1,0 +1,5 @@
+
+1. Clear button functionality: clear background color of divs within main div (set it to white color)
+2. Mouse events for tracking color selection and drawing
+3. Color selection from sidebar blocks
+4. Filling main div elements with color
