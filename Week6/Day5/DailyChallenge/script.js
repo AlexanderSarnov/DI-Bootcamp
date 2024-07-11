@@ -22,7 +22,7 @@ function isAnagram(str1, str2) {
     }
 
     // Preview map
-    console.log(charCount)
+    // console.log(charCount)
 
     // Iterate through the second string and check for matching frequencies
     for (let char of cleanStr2) {
