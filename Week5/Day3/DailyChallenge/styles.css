@@ -1,0 +1,158 @@
+/* Style the body */
+body {
+    margin: 0;
+    background-color: black;
+}
+
+/* Style the solar system section */
+.solar-system {
+    display: flex;
+    /* Flexbox layout for wrapper divs */
+    flex-wrap: wrap;
+    /* Allow wrapping of content if needed */
+    width: 100%;
+    /* Occupy full width */
+    flex-direction: column;
+}
+
+/* Style the planet wrapper divs */
+.planet-wrapper {
+    display: flex;
+    /* Flexbox layout for planet and moons */
+    flex-direction: row-reverse;
+    /* Reverse order: planet on right, moons on left */
+    width: 100%;
+    /* Adjust width as needed */
+    min-width: 150px;
+    margin: 10px;
+    /* border: 1px solid #ddd; */
+    /* Optional border for visual separation */
+    padding: 10px;
+    /* Optional padding for content */
+    background-color: black;
+    /* Optional background color */
+}
+
+/* Style the planet divs */
+.planet {
+    width: 150px;
+    /* Adjust width as needed based on total wrapper width */
+    height: 150px;
+    border-radius: 50%;
+    /* Background color is still defined here for fallback situations (optional) */
+    background-color: #222;
+    /* Consider removing if you have an image for all planets */
+    color: white;
+    text-align: center;
+    line-height: 90px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+/* Style the moon container divs */
+.moons {
+    width: 90%;
+    /* Adjust width as needed based on total wrapper width */
+    display: flex;
+    /* Flexbox layout for moons */
+    flex-wrap: wrap;
+    /* Allow wrapping of content onto multiple rows */
+}
+
+/* Style the moon divs */
+.moon {
+    width: 100px;
+    /* Adjust width based on desired number of moons per row (here, 5) with spacing */
+    height: 100px;
+    /* Adjust height as needed */
+    border-radius: 50%;
+    /* Optional rounded corners for moons */
+    border: 1px solid #ccc;
+    /* Optional border for moons */
+    background-color: #fff;
+    /* Optional background color for moons */
+    /* color: #333; */
+    /* Optional text color for moons */
+    text-align: center;
+    line-height: 70px;
+    margin: 5px;
+    /* Optional spacing between moons */
+    overflow-wrap: break-word;
+    font-size: small;
+}
+
+.planet-mercury {
+    width: 100px;
+    height: 100px;
+    background-image: url("./images/mercury.png");
+    background-size: cover;
+    background-color: transparent;
+}
+
+.planet-venus {
+    width: 160px;
+    height: 160px;
+    background-image: url("./images/venus.png");
+    background-size: cover;
+    background-color: transparent;
+}
+
+.planet-earth {
+    width: 140px;
+    height: 140px;
+    background-image: url("./images/earth.png");
+    background-size: cover;
+    background-color: transparent;
+}
+
+.moon-moon {
+    width: 70px;
+    height: 70px;
+    background-image: url("./images/moon.png");
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.planet-mars {
+    width: 130px;
+    height: 130px;
+    background-image: url("./images/mars.png");
+    background-size: cover;
+    background-color: transparent;
+}
+
+.planet-jupiter {
+    width: 300px;
+    height: 300px;
+    background-image: url("./images/jupiter.png");
+    background-size: cover;
+    background-color: transparent;
+}
+
+.planet-saturn {
+    width: 250px;
+    height: 250px;
+    background-image: url("./images/saturn.png");
+    background-size: cover;
+    background-color: transparent;
+}
+
+.planet-uranus {
+    width: 220px;
+    height: 220px;
+    background-image: url("./images/uranus.png");
+    background-size: cover;
+    background-color: transparent;
+    color: black
+}
+
+.planet-neptune {
+    width: 220px;
+    height: 220px;
+    background-image: url("./images/neptune.png");
+    background-size: cover;
+    background-color: transparent;
+}
