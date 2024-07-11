@@ -1,0 +1,35 @@
+body {
+    background-image: url("./circuit-pattern.png");
+    /* background-size: cover; */
+    /* Resize image to fit the container */
+    background-position: center;
+    background-color: blueviolet;
+}
+
+.width-20 {
+    min-width: 20vw;
+    max-width: 50vw;
+}
+
+nav>div {
+    font-family: 'SEGA LOGO FONT', sans-serif;
+}
+
+.my-div {
+    background-image: url("./card-pattern.png");
+    background-size: cover;
+    /* Resize image to fit the container */
+    background-position: center;
+    /* Center the image */
+}
+
+.robot-image-wrapper {
+    position: relative;
+    /* Needed for proper positioning of overlay */
+    background-color: rgb(34, 33, 33);
+    opacity: 1;
+}
+
+.bg-light-grey {
+    background-color: lightgray;
+}
