@@ -1,0 +1,11 @@
+.fade-out {
+    opacity: 1;
+    /* Initial opacity */
+    transition: opacity 0.5s ease-in-out;
+    /* Fade transition */
+}
+
+.fade-out:hover {
+    opacity: 0;
+    /* Opacity on hover */
+}
