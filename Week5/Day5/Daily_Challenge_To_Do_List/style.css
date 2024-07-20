@@ -1,0 +1,143 @@
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, rgb(235, 66, 66), rgb(255, 104, 129));
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+#task-form {
+    display: flex;
+    /* Make a form a flex container */
+    max-width: 400px;
+    /* Adjust the value as needed */
+    min-height: 40px;
+    margin: 0 auto 10px auto;
+    /* Center the list horizontally */
+
+    background-color: white;
+
+    /* border: 1px solid #ccc; */
+    /* Add a border */
+
+
+    padding: 10px;
+    /* Add some padding */
+    flex: 1;
+    /* Make the label take all available space */
+    position: relative;
+    /* Needed for button positioning */
+}
+
+#task-input {
+    flex: 1;
+    padding: 5px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-bottom: 1px solid blue;
+    background-color: white;
+}
+
+.task input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task label {
+    flex: 1;
+}
+
+.task .fa-close {
+    cursor: pointer;
+    color: #ccc;
+    font-size: 18px;
+}
+
+.task.completed label {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.task.completed input[type="checkbox"] {
+    accent-color: lightgray;
+    /* Set checkbox color to lightgray with darker tick */
+}
+
+#task-input {
+    border: none;
+    background-color: lightred;
+    color: blue;
+    padding: 5px 10px;
+    /* No width or height needed - it fills the label */
+    outline: none;
+    /* Remove default outline on focus */
+}
+
+#task-form button {
+    border: none;
+    background-color: transparent;
+    /* Transparent background */
+    color: skyblue;
+    /* Set color */
+    font-weight: 600;
+    /* Adjust font-weight as needed */
+    padding: 0 20px;
+    /* Adjust padding as needed */
+    cursor: pointer;
+    position: absolute;
+    /* Position the button inside the label */
+    top: 50%;
+    /* Center the button vertically */
+    transform: translateY(-50%);
+    /* Offset for vertical centering */
+    right: 0;
+    /* Position the button at the right edge */
+}
+
+.listTasks {
+    position: relative;
+    /* Make the container relative for absolute positioning */
+    max-width: 400px;
+    /* Adjust the value as needed */
+    margin: 0 auto;
+    /* Center the list horizontally */
+
+    background-color: white;
+
+    /* border: 1px solid #ccc; */
+    /* Add a border */
+
+    padding: 10px 10px 50px 10px;
+    /* Add some padding to create extra space for the clear button */
+}
+
+.tasks-container {
+    position: relative;
+    /* Make the container relative for absolute positioning */
+}
+
+.clear-tasks {
+    position: absolute;
+    /* Position the button absolutely within the container */
+    bottom: 5px;
+    /* Set distance from the bottom edge */
+    right: 5px;
+    /* Set distance from the right edge */
+    background-color: transparent;
+    /* Transparent background */
+    color: red;
+    /* Example text color */
+    padding: 5px 10px;
+    /* Add some padding */
+    border: none;
+    /* Remove borders */
+    cursor: pointer;
+    /* Indicate clickable behavior */
+}
