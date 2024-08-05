@@ -1,0 +1,59 @@
+const apiKey = '23ab6ac906b75e95920165f2'; // exchangerate-api.com API key, you can use your API key here instead
+
+const currCodes = [["USD", "United States Dollar"], ["EUR", "European Union Ruble"]]; supported currency codes, fetches from GET https://v6.exchangerate-api.com/v6/YOUR-API-KEY/codes
+const fromCurrency = select from list of currCodes; from which currency to convert
+const toCurrency = select from list of currCodes; into which currency to convert
+const amount = "";  the amount to convert
+const convert = ""  button that sends user input to API https://v6.exchangerate-api.com/v6/${apiKey}/pair/${fromCurrency}/${toCurrency}/${amount} and awaits for the result
+const output = ""  field that takes the fetched data from convert and generates text `${convertedAmount} ${toCurrency}`
+
+
+
+if amount !== float alert to input proper amount else round amount.value to 4 decimal symbols
+
+const switchCurrency = "" switch button shall swap values of fromCurrency and toCurrency, call function convert and fill the output with new Data, the amount shall reamin untouched
+
+*Example Request:
+https://v6.exchangerate-api.com/v6/23ab6ac906b75e95920165f2/latest/USD
+
+*Example result:
+"result": "success",
+"documentation": "https://www.exchangerate-api.com/docs",
+"terms_of_use": "https://www.exchangerate-api.com/terms",
+"time_last_update_unix": 1585267200,
+"time_last_update_utc": "Fri, 27 Mar 2020 00:00:00 +0000",
+"time_next_update_unix": 1585353700,
+"time_next_update_utc": "Sat, 28 Mar 2020 00:00:00 +0000",
+"base_code": "USD",
+"conversion_rates": {
+ 		"USD": 1,
+ 		"AUD": 1.4817,
+ 		"BGN": 1.7741,
+ 		"CAD": 1.3168,
+ 		"CHF": 0.9774,
+ 		"CNY": 6.9454,
+ 		"EGP": 15.7361,
+ 		"EUR": 0.9013,
+ 		"GBP": 0.7679,
+ 		"...": 7.8536,
+ 		"...": 1.3127,
+ 		"...": 7.4722, etc. etc.
+ 	}
+    
+ !Error Response:
+ {
+     "result": "error",
+         "error-type": "unknown-code"
+ }
+
+ !Error messages:
+ "unsupported-code" if we don't support the supplied currency code (see supported currencies...).
+ "malformed-request" when some part of your request doesn't follow the structure shown above.
+ "invalid-key" when your API key is not valid.
+ "inactive-account" if your email address wasn't confirmed.
+ "quota-reached" when your account has reached the the number of requests allowed by your plan.
+
+ *Notes
+ User input amount shall be float with 4 decimal symbols
+ GET https://v6.exchangerate-api.com/v6/YOUR-API-KEY/codes
+ GET https://v6.exchangerate-api.com/v6/${apiKey}/pair/${fromCurrency}/${toCurrency}/${amount}
