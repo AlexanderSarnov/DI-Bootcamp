@@ -1,3 +1,5 @@
+playerSymbol = "X" # initiate player with symbol X to have first move
+winner = None # initiate end game condition
 
 # !Functions
 def createBoard():
@@ -97,14 +99,9 @@ def checkForWinningCondition(board, playerSymbol):
          
 
 # !Main Program
+board = createBoard() # calls create board fuction
+printBoard(board) # initial state of game - prints empty board
 
-# !Variables
-board = createBoard()
-printBoard(board)
-playerSymbol = "X"
-winner = None
-
-# !Main
 # Game Loop (ctrl+c to interrupt the endless loop)
 while winner == None:
     """
