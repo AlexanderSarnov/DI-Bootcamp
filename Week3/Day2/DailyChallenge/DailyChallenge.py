@@ -7,7 +7,7 @@ class Pagination:
   This class handles Pagination of a list of items.
   """
 
-  def __init__(self, items=None, page_size=10):
+  def __init__(self, items=None, page_size=10) -> None:
     """
     Initializes the Pagination class.
 
@@ -25,7 +25,7 @@ class Pagination:
     self.current_page = 1
     self.total_pages = self.get_total_pages()
 
-  def get_total_pages(self):
+  def get_total_pages(self) -> int:
     """
     Calculates the total number of pages based on the number of items and page size.
 
@@ -36,7 +36,7 @@ class Pagination:
       return 0
     return (len(self.items) // self.page_size) + (1 if len(self.items) % self.page_size else 0)
 
-  def get_visible_items(self):
+  def get_visible_items(self) -> list:
     """
     Returns the list of items for the current page.
 
@@ -45,7 +45,7 @@ class Pagination:
     """
     return self.get_page(self.current_page)
 
-  def get_page(self, page_number=None):
+  def get_page(self, page_number=None) -> list:
     """
     Fetches a specific page of items.
 
@@ -67,7 +67,7 @@ class Pagination:
     self.current_page = page_number
     return self.items[start_index:end_index]
 
-  def next_page(self):
+  def next_page(self) -> list:
     """
     Moves to the next page if available.
 
@@ -80,7 +80,7 @@ class Pagination:
     else:
       return None
 
-  def has_next_page(self):
+  def has_next_page(self) -> bool:
     """
     Checks if there is a next page available.
 
@@ -92,7 +92,7 @@ class Pagination:
 # Exercise example tests
 def test_pagination():
   alphabet_list = list("abcdefghijklmnopqrstuvwxyz")
-  p = pagination(alphabet_list, 4)
+  p = Pagination(alphabet_list, 4)
 
   # Test get_visible_items on first page
   assert p.get_visible_items() == ["a", "b", "c", "d"]

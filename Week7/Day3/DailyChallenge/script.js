@@ -47,8 +47,6 @@ function populateDropdown(codes) { // show lists of currencies for user to pick 
     }
 }
 
-
-
 async function fetchConversion() {
     const fromCurrency = fromSelect.value;
     const toCurrency = toSelect.value;
@@ -88,9 +86,7 @@ function convertRate(rate) {
 
 function switchCurrencies() {
     // Swap values of fromSelect and toSelect
-    const temp = fromSelect.value;
-    fromSelect.value = toSelect.value;
-    toSelect.value = temp;
+    [fromSelect.value, toSelect.value] = [toSelect.value, fromSelect.value]; // using destructuring as a more conscience method than creating a temporary variable
 
     // Recalculate and update output
     fetchConversion();

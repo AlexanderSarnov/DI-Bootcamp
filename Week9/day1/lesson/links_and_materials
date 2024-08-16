@@ -1,0 +1,44 @@
+Lesson on how to create React App
+https://octopus.developers.institute/courses/collection/99/course/476/section/856/chapter/1358
+
+
+Create A React App
+In order to learn and test React, you should set up a React Environment on your computer.
+
+The "create-react-app" is an officially supported way to create React applications.
+
+According to the documentation:
+
+Create React App is a comfortable environment for learning React, and is the best way to start building a new single page application in React.
+
+What Is Create React App ?
+Create React App doesn’t handle backend logic or databases; it just creates a frontend build pipeline, so you can use it with any backend you want. Under the hood, it uses Babel and webpack.
+
+Create A Project
+If you have NPM and Node.js installed, you can create a React application.
+
+The create-react-app will set up everything you need to run a React application.
+
+Run this command to create a React application named blog:
+C:\Users\Your Name>npx create-react-app blog
+
+
+Note: npx on the first line is not a typo — it’s a package runner tool that comes with npm 5.2+
+
+Run this command to move to the blog directory:
+C:\Users\Your Name>cd blog
+
+
+Run this command to execute the React application blog:
+C:\Users\Your Name\myfirstreact>npm start
+
+
+A new browser window will pop up with your newly created React App! If not, open your browser and type localhost:3000 in the address bar.
+
+React.dev - official page. based on JSX, manipulating the DOM using the virtual DOM - copy DOM and manipulate it and after inject it back to page.
+React is running on server type of node.js. There will be 2 terminals: React for front end and Node.js for backend.
+Fetch and send request to get a response.
+Ziv said to install it globally - what are the benefits? - less heavy for the computer. npx -x - means execute.
+
+To avoid some issues:
+npm i -D ajv  - in folder with react

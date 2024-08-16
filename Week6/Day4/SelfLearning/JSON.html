@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Methods GET and POST</title>
+    <!-- only works with GET for me, returns 405 Method Not Allowed error when using POST (chrome) -->
+</head>
+
+<body>
+    <form method="GET" action="index.html">
+        <p>Name: <input type="text" name="name"></p>
+        <p>Message:<br><textarea name="message"></textarea></p>
+        <p><button type="submit">Send</button></p>
+    </form>
+    <script src="JSON.js"></script>
+</body>
+
+</html>
