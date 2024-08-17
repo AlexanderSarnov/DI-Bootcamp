@@ -1,6 +1,5 @@
 """
 I've adjusted the task to be more concise and engaging. The goal is to sing a short song with proper pluralization (except for sheep/sheeps issue for simplicity).
-Sorry, this time without user input.
 """
 
 
@@ -50,8 +49,12 @@ macdonald = Farm("McDonald")
 
 # Add animals
 macdonald.add_animal('cow', 1) # Changed cows count to 1 to test pluralization
-macdonald.add_animal('sheep', 2)  
 macdonald.add_animal('goat', 12)
+# Tests different ways to add animals
+macdonald.add_animal('sheep', 2) 
+macdonald.add_animal('sheep')
+macdonald.add_animal('sheep', 1) # Output: sheeps : 4 
+
 
 # Print the farm information with a song
 print(macdonald.get_info())
