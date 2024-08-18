@@ -1,20 +1,3 @@
--- Database: hollywood
-
--- DROP DATABASE IF EXISTS hollywood;
-
--- CREATE DATABASE hollywood
---     WITH
---     OWNER = postgres
---     ENCODING = 'UTF8'
---     LC_COLLATE = 'English_United States.1252'
---     LC_CTYPE = 'English_United States.1252'
---     LOCALE_PROVIDER = 'libc'
---     TABLESPACE = pg_default
---     CONNECTION LIMIT = -1
---     IS_TEMPLATE = False;
-
-
--- copy and paste exercise table (actors) from slack (provided by Yossi)
 -- CREATE TABLE actors(
 --  actor_id SERIAL PRIMARY KEY,
 --  first_name VARCHAR (50) NOT NULL,
@@ -42,8 +25,8 @@
 -- FROM actors
 
 -- 1. Count how many actors are in the table.
-SELECT COUNT(first_name)
-FROM actors; -- returns 11 with bigint data type.
+-- SELECT COUNT(actor_id)
+-- FROM actors; -- returns 11 with bigint data type.
 
 -- 2. Try to add a new actor with some blank fields. What do you think the outcome will be ?
 -- the outcome will be an error message because all fields are set to be "NOT NULL"
