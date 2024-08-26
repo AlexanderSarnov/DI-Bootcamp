@@ -31,7 +31,7 @@
 
 -- SELECT COUNT(*) 
 -- FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id = 5 ) -- Output: count='2'
--- This query checks for id values not equal to a specific value (5) that exists in SecondTab. This leads to a count of 2 (id=6 and id=7 from FirstTab).
+-- This query checks for id values not equal to a specific value (5) that exists in SecondTab. This leads to a count of 2 (id=6 and id=7 from FirstTab (explicitly excluding NULL from comparison)).
 
 -- -- Q3. What will be the OUTPUT of the following statement?
 

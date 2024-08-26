@@ -56,7 +56,7 @@
 -- FROM 
 -- 	film
 -- WHERE 
--- 	title LIKE 'My%';
+-- 	title LIKE 'My%'; -- may use ILIKE 'my%' for case-insensitive search
 
 -- -- Write a query which will find the 10 cheapest movies.
 -- WITH MovieRanks AS (
