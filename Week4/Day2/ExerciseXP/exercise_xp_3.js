@@ -28,6 +28,6 @@ function getUserInput() {
             rl.close();
         }
     });
-}
+}4
 
 getUserInput(); // Start the process

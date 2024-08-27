@@ -18,7 +18,7 @@
 //     and their sum
 
 
-function displayNumbersDivisible(divisor = 23) {
+function displayNumbersDivisible(divisor) {
     let numbers = ""
     let sum = 0;
     for (let i = 0; i <= 500; i++) {

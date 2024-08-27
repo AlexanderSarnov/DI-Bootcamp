@@ -18,11 +18,11 @@ const logOutTextNode = document.createTextNode("Logout");
 // Append the text node to the newly created list node(<li>).
 newListElement.appendChild(logOutTextNode);
 
-//         Finally, append this updated list node to the unordered list (<ul>), using the appendChild method.
+// Finally, append this updated list node to the unordered list (<ul>), using the appendChild method.
 const unorderedList = document.querySelector("#socialNetworkNavigation ul");
 unorderedList.appendChild(newListElement);
 
-//             Use the firstElementChild and the lastElementChild properties to retrieve the first and last <li> elements from their parent element (<ul>). Display the text of each link. (Hint: use the textContent property).
+// Use the firstElementChild and the lastElementChild properties to retrieve the first and last <li> elements from their parent element (<ul>). Display the text of each link. (Hint: use the textContent property).
 const firstListItem = unorderedList.firstElementChild;
 const lastListItem = unorderedList.lastElementChild;
 
