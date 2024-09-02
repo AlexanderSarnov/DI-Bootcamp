@@ -17,7 +17,7 @@
 // // with const instead of let ?
 // // ** It will return an error message: "TypeError: Assignment to constant vatiable."
 
-// //#2
+// // //#2
 // const a = 0;
 // function funcTwo() {
 //     a = 5;

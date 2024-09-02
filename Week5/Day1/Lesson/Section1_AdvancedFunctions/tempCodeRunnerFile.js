@@ -1,0 +1,1 @@
+console.log(z); // ReferenceError: z is not defined, due to variable declaration outside the block

@@ -13,8 +13,9 @@ const kgToGrConverter2 = function (value) {
     return value * 1000; // Return the weight in grams
 };
 
-// Difference between function declaration and expression (one line comment)
-// Function declarations are hoisted, have their own `this` context, and can be named or anonymous. Function expressions are not hoisted, inherit `this` context from surrounding scope, and must be anonymous.
+// Difference between function declaration and expression
+// Function declarations are hoisted, have their own `this` context, and can be named or anonymous.
+//Function expressions are not hoisted, inherit`this` context from surrounding scope, and must be anonymous.
 
 // Finally, use a one line arrow function and invoke it.
-((value) => console.log(kgToGrConverter2(value)))(3); // Return the weight in grams
+((kg) => console.log(`${kg}kg = ${kg * 1000}gr.`))(3); // Return the weight in grams
