@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+        let usersA = [
+            { id: 1, name: 'John', email: 'jjj@gmail.com' },
+            { id: 2, name: 'Marry', email: 'mmm@gmail.com' },
+            { id: 3, name: 'Anne', email: 'aaa@gmail.com' },
+            { id: 3, name: 'Or', email: 'aaa@gmail.com' },
+        ];
+
+        usersA.map((user) => {
+            const newDiv = document.createElement('div');
+            newDiv.textContent = `${user.name} - ${user.email}`;
+            newDiv.setAttribute('id', `user-${user.id}`);
+            newDiv.style.color = 'black';
+            document.body.appendChild(newDiv);
+        });
+    </script>
+    <script src="lesson.js"></script>
+</body>
+
+</html>

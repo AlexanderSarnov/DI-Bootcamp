@@ -27,7 +27,7 @@ function getCarHonda(carInventory) {
 }
 
 const hondaCarString = getCarHonda(inventory);
-console.log(hondaCarString); // Output (assuming Honda is found): This is a Honda Accord from 1983.
+console.log(hondaCarString); // Output: This is a Honda Accord from 1983.
 
 
 // Part II
