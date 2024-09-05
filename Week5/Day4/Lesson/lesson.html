@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP & Form method GET and POST</title>
+</head>
+
+<body>
+    <h1>HTTP & Form method GET and POST</h1>
+    <h2>Forms, JSON and Exceptions</h2>
+    <!-- HTTP method 
+     GET
+     POST -->
+    <h3>GET Request</h3>
+    <!-- Name and Password fields -->
+    <form method="GET" action="">
+        <input type="text" placeholder="Name" name="name">
+        <input type="password" name="password" id="get" placeholder="Password">
+        <input type="submit" value="Send">
+    </form>
+    <h3>Post Request</h3>
+    <form method="POST" action="">
+        <input type="text" placeholder="Name" name="name" />
+        <input type="password" id="post" placeholder="Password" name="password" />
+        <input type="submit" />
+    </form>
+    <h2>Example: Get A User</h2>
+    <form method="GET" action="https://jsonplaceholder.typicode.com/users">
+        <input type="number" name="id" />
+        <input type="submit" />
+    </form>
+    <h2>Exercise: Google Search</h2>
+    <form action="https://google.com/search" method="GET">
+        <input type="text" name="q" />
+        <input type="submit" />
+    </form>
+    <h2>Add a Post</h2>
+    <form method="get" action="https://jsonplaceholder.typicode.com/posts">
+        <input type="text" name="userId" placeholder="User Id" />
+        <input type="text" name="title" placeholder="Title" />
+        <input type="text" name="body" placeholder="Body" />
+        <input type="submit" value="Send A Post Request" />
+    </form>
+    <h2>Exercise: Add User</h2>
+    <form action="https://users-18kl.onrender.com/user" method="post">
+        <input type="text" name="name" placeholder="Name" />
+        <input type="email" name="email" placeholder="Email" />
+        <input type="text" name="username" placeholder="Email" />
+        <input type="submit" value="Send A User Request" />
+
+    </form>
+    <script src="lesson.js"></script>
+</body>
+
+</html>
