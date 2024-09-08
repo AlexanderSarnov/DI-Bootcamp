@@ -1,0 +1,27 @@
+Tic Tac Toe game vs a computer player.
+
+Number of players: 2
+One of the players name is "Tic-Tac-Toe Bot"
+
+The human player shall input his nick name before the game starts.
+
+If player wants to play another game it shall take his already used credentials and show statistics of the games played in the session.
+
+? Can we run the game between two bots?
+
+DOM elements:
+Game name: header
+
+User name input field.
+Game randomly assignes the X,O to the players.
+? Shall user be asked for a side in the next game or is it autoswitching sides, or is the user supposed to be stuck with one side?
+
+Board of 9 fields where user can click with a mouse to mark it with his chosen symbol (X,O).
+The bot player in response will mark an empty existing field with the other symbol (O,X).
+
+Learn, understand and apply Mini-Max Algorithm for the game.
+The Mini-Max algorithm is a decision-making algorithm used in artificial intelligence, particularly in game theory and computer games. It is designed to minimize the possible loss in a worst-case scenario (hence “min”) and maximize the potential gain (therefore “max”).
+
+
+
+

@@ -6,8 +6,8 @@
 // Using a character map
 function isAnagram(str1, str2) {
     // Preprocess strings (remove non-alphanumeric characters and convert to lowercase)
-    const cleanStr1 = str1.toLowerCase().replace(/\s/g, "");
-    const cleanStr2 = str2.toLowerCase().replace(/\s/g, "");
+    const cleanStr1 = str1.toLowerCase().replace(/\s/g, '');
+    const cleanStr2 = str2.toLowerCase().replace(/\s/g, '');
 
     // Check string lengths after preprocessing
     if (cleanStr1.length !== cleanStr2.length) return `"${str1}" is not an anagram of "${str2}"`;
@@ -36,7 +36,6 @@ function isAnagram(str1, str2) {
     return `"${str1}" is an anagram of "${str2}"`;
 }
 
-
-console.log(isAnagram("Astronomer", "Moon starer"));
-console.log(isAnagram("School master", "The classroom"));
-console.log(isAnagram("The Morse Code", "Here come dots"));
+console.log(isAnagram('Astronomer', 'Moon starer'));
+console.log(isAnagram('School master', 'The classroom'));
+console.log(isAnagram('The Morse Code', 'Here come dots'));
