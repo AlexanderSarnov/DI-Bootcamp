@@ -18,3 +18,4 @@ rejectedPromise
     .then(value => console.log(value)) // Will not execute
     .catch(error => console.error(error));
 
+ 

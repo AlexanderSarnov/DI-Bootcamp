@@ -16,4 +16,5 @@ people.push("Alex")
 console.log(people); // Output: ['Mary', 'Devon', 'Jason', 'Alex']
 
 // Write code that console.logs Mary’s index. take a look at the indexOf method on Google.
-console.log(`Index of "Mary" is ${people.indexOf("Mary")});
+// indexOf() returns index of an element or -1 if not in array
+console.log(`Index of "Mary" is ${people.indexOf("Mary")}`);

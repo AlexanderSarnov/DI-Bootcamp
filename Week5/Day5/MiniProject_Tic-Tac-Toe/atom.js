@@ -35,11 +35,13 @@ console.log(countdown(10));
 
 // Rewrite recursion using ternary operators
 function countdownTernary (itrNum, isInitState = true) {
-  return `\nCountdown Complete.`
-  ? itrNum < 0
-  : `\nStarting Countdown: \n${itrNum}, ` + countdownTernary(itrNum - 1, false)
-  ? isInitState === true
-  : `0: ` + countdownTernary(itrNum - 1, false)
-  ? itrNum === 0
-  : `${itrNum}, ` + countdownTernary(itrNum - 1, false);
+  return itrNum < 0
+  ? `\nCountdown Complete.`
+  : isInitState === true
+  ? `\nStarting Countdown: \n${itrNum}, \n` + countdownTernary(itrNum - 1, false)
+  : itrNum === 0
+  ? `0 -----> : ` + countdownTernary(itrNum - 1, false)
+  : `${itrNum}, \n` + countdownTernary(itrNum - 1, false);
 }
+
+console.log(countdownTernary(10));

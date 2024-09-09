@@ -44,7 +44,7 @@ const morse = `{
   "@": ".--.-.",
   "(": "-.--.",
   ")": "-.--.-"
-}`
+}`;
 
 // Create three functions.The two first functions should return a promise..
 
@@ -78,7 +78,7 @@ function toJs(morseString) {
 
 function toMorse(morseObject) {
     return new Promise((resolve, reject) => {
-        const userInput = prompt("Enter a word or sentence:");
+        const userInput = prompt('Enter a word or sentence:');
         const morseCode = [];
 
         for (const char of userInput) {
@@ -112,6 +112,6 @@ function joinWords(morseTranslation) {
 
 // Chain the three functions.
 toJs(morse)
-    .then(morseObject => toMorse(morseObject))
-    .then(morseTranslation => joinWords(morseTranslation))
-    .catch(error => console.error(error));
+    .then((morseObject) => toMorse(morseObject))
+    .then((morseTranslation) => joinWords(morseTranslation))
+    .catch((error) => console.error(error));
