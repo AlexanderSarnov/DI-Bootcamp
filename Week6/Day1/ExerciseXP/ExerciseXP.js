@@ -56,7 +56,7 @@ resolveItselfInFourSeconds()
 const resolvedPromise = Promise.resolve(3);
 const rejectedPromise = Promise.reject('Boo!');
 
-// Promises consumption .then() and .cathc()
+// Promises consumption .then() and .catch()
 resolvedPromise.then((value) => console.log(value)).catch((error) => console.log(error));
 
 rejectedPromise.then((value) => console.log(value)).catch((error) => console.log(error));

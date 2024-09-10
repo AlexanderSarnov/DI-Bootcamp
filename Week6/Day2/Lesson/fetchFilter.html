@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="fetchFilter.js"></script>
+</head>
+
+<body>
+    <h2>Exercise: Add User</h2>
+    <form id="postForm" onsubmit="displayNewUsers(event)">
+        <input type="text" name="name" placeholder="Name" /><br>
+        <input type="email" name="email" placeholder="Email" /><br>
+        <input type="text" name="username" placeholder="Username" /><br>
+        <input type="submit" value="Send A User Request" />
+    </form>
+    <div id="userInfo"></div>
+    <div id="allUsers"></div>
+</body>
+
+</html>

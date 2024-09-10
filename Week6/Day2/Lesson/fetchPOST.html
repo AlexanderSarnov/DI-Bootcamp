@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="fetchPOST.js" defer async></script>
+</head>
+
+<body>
+    <div>
+        <h2>Add a Post</h2>
+        <form onsubmit="fetchOneUser(event)">
+            <input type="text" name="userId" placeholder="user id"><br>
+            <input type="text" name="title" placeholder="title"><br>
+            <input type="text" name="body" id="body"><br>
+            <input type="submit">
+        </form>
+    </div>
+    <div id="root"></div>
+</body>
+
+</html>
