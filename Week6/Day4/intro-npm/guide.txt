@@ -1,0 +1,2 @@
+Use gitignore in main directory, with **/name notation to recursively find and ignore files (**.env - for example)
+to uninstall module - npm un express - will delete it also from the node_modules folder
