@@ -1,0 +1,18 @@
+Neon db credentials - remember to remove '' from the names of parameters where necessary
+
+to connect to db we will use libraries.
+some are native (work with only one db), some are not (can connect to many dbs).
+
+with knex we can easy migrate from one db to another.
+
+knex.js is a library, the knex query builder is the interface used for building and executing standard SQL queries, such as select, insert, update, delete.
+
+it is promise based.
+
+Transactions in knex - to read.
+sql commands
+-- commit
+-- rollback
+
+
+

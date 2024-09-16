@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer async></script>
+</head>
+
+<body>
+    <h1>Shop</h1>
+    <div>
+        <h2>Search one product with id</h2>
+        <input type="text" id="searchInput" />
+        <input type="submit" id="searchButton" />
+    </div>
+    <div>
+        <h2>Add a product</h2>
+        <form action="POST" onSubmit="addProductId(event)">
+            <input type="text" id="addInputName" placeholder="name" />
+            <input type="text" id="addInputPrice" placeholder="price" />
+            <input type="submit">
+        </form>
+    </div>
+    <div id="root"></div>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+did an exercise in the previous day folder
+
+lesson about organizing the server side files and functions.
+
+/**
+ * server
+ * |_ config - connection to database
+ * |_ models - schema for products (queries to db)
+ * |_ controllers - handle requests and interact with models (request,response)
+ * |_ routes - define endpoints (api endpoints)(route for api)
+ * |_ middlewares - funcitons that are getting requests and responses and continue the logic in the controller or change login in the middleware.
+ */
+
+
+Inside routers
+we define files as products.router.js, users.router.js --> different apis for different stuff.
+if we need to add a feature to products.router.js - we go there. We separate things in our server!
+
+! Connect to the neon database (coud database) - sign up and there we can create an instance of the database.
+https://console.neon.tech/
+

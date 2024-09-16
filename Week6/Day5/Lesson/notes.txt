@@ -1,0 +1,17 @@
+express.js - is web application server framework for web applications.
+
+standard server framework for node.js
+
+used to deverlope an application that can handle multiple requests at once (GET, POST, PUT, DELETE).
+
+CRUD = Create, Read, Update, Delete.
+
+Server - Client communication
+Client sends requests to the server
+Server receives requests and evaluates it accordingly
+Server sends response to the Client
+
+HTTP is the only way to send requests and get responses.
+
+We will use the express server as an example (developing a server is a big deal and will take years for a single person to accomplish)
+
