@@ -11,6 +11,8 @@ const PostsList = () => {
     const postStatus = useSelector((state) => state.posts.status);
     const error = useSelector((state) => state.posts.error);
 
+    console.log(posts);
+
     useEffect(() => {
         if (postStatus === 'idle') {
             dispatch(fetchPosts());
@@ -28,10 +30,10 @@ const PostsList = () => {
     }
 
     return (
-        <main>
+        <div>
             <h1>Posts</h1>
             {content}
-        </main>
+        </div>
     );
 };
 
