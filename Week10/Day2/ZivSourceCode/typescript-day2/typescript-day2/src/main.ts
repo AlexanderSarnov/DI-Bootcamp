@@ -1,6 +1,6 @@
 /** fuctions */
 const sum = (a: number, b: number): number => {
-  return a + b;
+    return a + b;
 };
 
 let ret = sum(1, 2);
@@ -16,10 +16,10 @@ let ret = sum(1, 2);
 type StringNumber = string | number;
 
 const sumOrConcat = (a: number, b: StringNumber): StringNumber => {
-  // type guard
-  // if (typeof b === "string") return a + b + "";
-  // return a + b;
-  return typeof b === "string" ? a + b + "" : a + b;
+    // type guard
+    // if (typeof b === "string") return a + b + "";
+    // return a + b;
+    return typeof b === 'string' ? a + b + '' : a + b;
 };
 
 type TwoNumbers = (a: number, b: number) => number;
@@ -30,49 +30,47 @@ type TwoNumbers = (a: number, b: number) => number;
 // };
 
 const multi: TwoNumbers = (x, y) => {
-  return x * y;
+    return x * y;
 };
 
 /** default params */
 const addDefault = (a: number, b: number = 5): number => {
-  return a + b;
+    return a + b;
 };
 // addDefault(1,4)
 
 /** optional params */
 const addOpional = (a: number, b?: number): number => {
-  // if(typeof b === undefined) return a
-  return a + (b || 0);
+    // if(typeof b === undefined) return a
+    return a + (b || 0);
 };
 
 /** never type */
 const errorMessage = (message: string): never => {
-  throw new Error(message);
+    throw new Error(message);
 };
 
-const numberOrString = (
-  value: number | string | string[] | undefined
-): string => {
-  if (typeof value === "string") return "this is a string";
-  if (typeof value === "number") return "this is a number";
-  return errorMessage("this should be only a string or a number");
+const numberOrString = (value: number | string | string[] | undefined): string => {
+    if (typeof value === 'string') return 'this is a string';
+    if (typeof value === 'number') return 'this is a number';
+    return errorMessage('this should be only a string or a number');
 };
 
 const infinite = (): never => {
-  while (true) {}
+    while (true) {}
 };
 
 const log = (message: string): void => {
-  console.log(message);
+    console.log(message);
 };
 
 /** function overload */
 function add(a: number, b: number): number;
 function add(a: string, b: string): string;
 function add(a: number | string, b: number | string): number | string {
-  if (typeof a === "string" && typeof b === "string") return a + b + "";
-  if (typeof a === "number" && typeof b === "number") return a + b;
-  return -1;
+    if (typeof a === 'string' && typeof b === 'string') return a + b + '';
+    if (typeof a === 'number' && typeof b === 'number') return a + b;
+    return -1;
 }
 
 // add(1,2)
@@ -130,25 +128,25 @@ function add(a: number | string, b: number | string): number | string {
  */
 
 class User {
-  public name: string;
-  private age: number;
-  protected active: boolean;
+    public name: string;
+    private age: number;
+    protected active: boolean;
 
-  constructor(name: string, age: number, active: boolean) {
-    this.name = name;
-    this.age = age;
-    this.active = active;
-  }
+    constructor(name: string, age: number, active: boolean) {
+        this.name = name;
+        this.age = age;
+        this.active = active;
+    }
 
-  getAge() {
-    return `My age is ${this.age}`;
-  }
-  getActive() {
-    return `Am I active? ${this.active}`;
-  }
-  setAge(age: number) {
-    this.age = age;
-  }
+    getAge() {
+        return `My age is ${this.age}`;
+    }
+    getActive() {
+        return `Am I active? ${this.active}`;
+    }
+    setAge(age: number) {
+        this.age = age;
+    }
 }
 
 // let user1 = new User("John", 25, true);
@@ -158,47 +156,64 @@ class User {
 // console.log(user1.name);
 
 class Student extends User {
-  // public gender: string
-  constructor(
-    name: string,
-    age: number,
-    active: boolean,
-    public gender: string
-  ) {
-    super(name, age, active);
-  }
+    // public gender: string
+    constructor(name: string, age: number, active: boolean, public gender: string) {
+        super(name, age, active);
+    }
 
-  getStudentAge() {
-    return `Student age is ${this.getAge()}`;
-  }
-  getStudentActive() {
-    return `Is student active? ${this.active}`;
-  }
+    getStudentAge() {
+        return `Student age is ${this.getAge()}`;
+    }
+    getStudentActive() {
+        return `Is student active? ${this.active}`;
+    }
 }
 
-let stud1 = new Student("Anne", 22, true, "f");
+let stud1 = new Student('Anne', 22, true, 'f');
 
 // console.log(stud1.gender);
 // console.log(stud1.getStudentActive())
 // console.log(stud1.getStudentAge())
 
 interface UserI {
-  name: string;
-  age: number;
-  active: boolean;
-  getAge(): number;
+    name: string;
+    age: number;
+    active: boolean;
+    getAge(): number;
 }
 
 class Users implements UserI {
-  constructor(
-    public name: string,
-    public age: number,
-    public active: boolean
-  ) {}
-  getAge(): number {
-    return this.age;
-  }
+    constructor(public name: string, public age: number, public active: boolean) {}
+    getAge(): number {
+        return this.age;
+    }
 }
 
+// class Students extends Users {
+
+// }
 
 /** static method */
+
+class UserStatic {
+    static count: number = 0;
+
+    static getCount(): number {
+        return UserStatic.count;
+    }
+
+    public id: number;
+    public name: string;
+    constructor(name: string) {
+        this.name = name;
+        this.id = ++UserStatic.count;
+    }
+}
+
+const user1 = new UserStatic('John');
+const user2 = new UserStatic('Marry');
+const user3 = new UserStatic('Anne');
+
+console.log(user1.name, user1.id, UserStatic.getCount());
+console.log(user2.name, user2.id, UserStatic.count);
+console.log(user3.name, user3.id, UserStatic.count);
