@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="./src/main.ts" defer async></script>
+  <title>To-Do List</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body class="container my-5">
+  <form id="itemEntryForm" class="form-inline mb-3">
+    <input type="text" id="newItem" class="form-control mr-2 flex-grow-1" placeholder="Enter new item..." />
+    <button type="submit" class="btn btn-primary">Add Item</button>
+  </form>
+  <ul id="listItems" class="list-group"></ul>
+  <button id="clearItemsButton" class="btn btn-danger mt-3">Clear All</button>
+  <script type="module" src="./src/main.ts"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+/* src/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+input[type='text'] {
+    flex: 1 1 auto;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex: 0 1 100px;
+    margin-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    word-wrap: break-word; /* Ensure long text wraps */
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li span {
+    flex: 1;
+    margin-right: 10px; /* Add margin between text and buttons */
+    margin-left: 10px; /* Add margin between checkbox and text */
+}
+
+button.btn {
+    flex: none; /* Ensure buttons don't stretch */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        flex: 1 1 auto;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    input[type='text'] {
+        margin-bottom: 10px;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button.btn {
+        margin-top: 5px;
+        align-self: flex-end;
+    }
+}
